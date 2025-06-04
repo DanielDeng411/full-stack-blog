@@ -11,6 +11,12 @@ const IKImage = ({ src, className, w, h, alt }) => {
             width={w}
             height={h}
             lqip={{ active: true, quality: 20 }}
+            transformation={[
+                {
+                    width: w,
+                    height: h
+                },
+            ]}
         />
     );
 };
