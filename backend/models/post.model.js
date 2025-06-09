@@ -4,9 +4,9 @@ import mongoose from 'mongoose';
 const postScheme = new Schema(
     {
         user: {
-                    type: Schema.Types.ObjectId,
-                    ref: "User",
-                    required: true,
+            type: Schema.Types.ObjectId,
+            ref: "User",
+            required: true,
         },
         img: {
             type: String,
@@ -24,7 +24,7 @@ const postScheme = new Schema(
             type: String,
             
         },
-        context: {
+        content: {
             type: String,
             required: true,
         },
